@@ -6,7 +6,7 @@ import Navigo from 'navigo';
 import escape from 'lodash/escape';
 
 import * as arwes from '../src';
-import { ThemeProvider, createTheme, SoundsProvider, createSounds } from '../src';
+import { ThemeProvider, createTheme, SoundsProvider, createSounds, Frame } from '../src';
 import sandboxes from './sandboxes';
 
 const sounds = {
@@ -123,19 +123,19 @@ class App extends Component {
     );
   }
 
-  onChange = (selectedComponentName) => {
+  onChange (selectedComponentName) {
     this.router.navigate(selectedComponentName);
   }
 
-  onCodeChange = () => {
+  onCodeChange () {
     this.setState({ error: false });
   }
 
-  onError = (error) => {
+  onError (error) {
     this.setState({ error });
   }
 
-  getSelected = () => {
+  getSelected () {
     const { selectedComponentName } = this.state;
     const selectedComponent = sandboxes.find(el => el.name === selectedComponentName);
     return { name: selectedComponentName, component: selectedComponent };
@@ -145,8 +145,10 @@ class App extends Component {
 ReactDOM.render(
   <ThemeProvider theme={createTheme()}>
     <SoundsProvider sounds={createSounds(sounds)}>
-      <App />
+      <Frame theme={createTheme()}/>
     </SoundsProvider>
   </ThemeProvider>,
   document.querySelector('#app')
 );
+
+// App

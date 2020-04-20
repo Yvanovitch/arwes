@@ -1,6 +1,9 @@
 const path = require('path');
 
-module.exports = {
+module.exports = [
+{
+  target: 'web',
+  name: 'play',
   entry: {
     'play': './play/index.js'
   },
@@ -14,25 +17,13 @@ module.exports = {
       __dirname
     ],
     port: 7100,
-    host: '0.0.0.0',
-  },
-  resolve: {
-    modules: ['node_modules']
   },
   module: {
     rules: [{
       use: {
         loader: 'babel-loader',
-        options: {
-          presets: [
-            'react',
-            'es2015',
-            'stage-1'
-          ]
-        }
       },
       test: /.js$/,
-      exclude: /(node_modules)/,
     }, {
       test: /\.md$/,
       use: 'raw-loader'
@@ -42,4 +33,4 @@ module.exports = {
   watchOptions: {
     poll: true
   },
-};
+}];
