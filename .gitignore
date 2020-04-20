@@ -47,3 +47,4 @@ lib
 build
 site/api-components/*
 !site/api-components/.gitkeep
+package-lock.json
