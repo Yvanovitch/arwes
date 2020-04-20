@@ -22,7 +22,7 @@ export default (theme) => {
       width: 0,
       height: 0,
       display: 'inline-block',
-      animation: `arwes-words-blink ${theme.animTime}ms step-end infinite`,
+      animation: `$arwes-words-blink ${theme.animTime}ms step-end infinite`,
     },
     hide: {
       opacity: 0,

@@ -7,7 +7,7 @@ export default (theme) => {
       verticalAlign: 'middle',
       transition: `opacity ${theme.animTime}ms ease-out`,
       animation: props => props.animate
-        ? `arwes-logo-rotate ${theme.animTime * 200}ms infinite linear`
+        ? `$arwes-logo-rotate ${theme.animTime * 200}ms infinite linear`
         : '',
       opacity: 1,
 

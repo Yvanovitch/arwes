@@ -14,7 +14,7 @@ export default (theme) => {
       top: 0,
       bottom: 0,
       backgroundColor: props => darken(0.3, theme.color[props.layer].base),
-      animation: `arwes-highlight-click ${theme.animTime}ms ease-out 0ms 1`,
+      animation: `$arwes-highlight-click ${theme.animTime}ms ease-out 0ms 1`,
     },
     children: {
       zIndex: 2,

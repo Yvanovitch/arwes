@@ -34,14 +34,14 @@ export default (theme) => {
       marginTop: -25,
       width: 50,
       height: 50,
-      animation: `arwes-loading-circle1 ${theme.animTime * 3}ms infinite linear`,
+      animation: `$arwes-loading-circle1 ${theme.animTime * 3}ms infinite linear`,
     },
     circle2: {
       marginLeft: -15,
       marginTop: -15,
       width: 30,
       height: 30,
-      animation: `arwes-loading-circle2 ${theme.animTime * 3}ms infinite linear`,
+      animation: `$arwes-loading-circle2 ${theme.animTime * 3}ms infinite linear`,
     },
 
     isSmall: {
