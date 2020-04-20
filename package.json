@@ -87,7 +87,7 @@
     "navigo": "^5.3.3",
     "next": "^4.2.1",
     "raw-loader": "^0.5.1",
-    "react": "^16.1.1",
+    "react": "^16.13.1",
     "react-addons-test-utils": "^15.5.1",
     "react-docgen": "^2.20.0",
     "react-dom": "^16.1.1",
