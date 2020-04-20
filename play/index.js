@@ -6,7 +6,7 @@ import Navigo from 'navigo';
 import escape from 'lodash/escape';
 
 import * as arwes from '../src';
-import { ThemeProvider, createTheme, SoundsProvider, createSounds, Frame } from '../src';
+import { ThemeProvider, createTheme, SoundsProvider, createSounds, Frame, Arwes } from '../lib';
 import sandboxes from './sandboxes';
 
 const sounds = {
@@ -145,7 +145,11 @@ class App extends Component {
 ReactDOM.render(
   <ThemeProvider theme={createTheme()}>
     <SoundsProvider sounds={createSounds(sounds)}>
-      <Frame theme={createTheme()}/>
+      <Arwes animate>
+        <Frame theme={createTheme()} animate corners={4}>
+          Test
+        </Frame>
+      </Arwes>
     </SoundsProvider>
   </ThemeProvider>,
   document.querySelector('#app')

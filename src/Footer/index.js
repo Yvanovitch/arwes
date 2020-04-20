@@ -3,6 +3,6 @@ import withSounds from '../tools/withSounds';
 import Footer from './Footer';
 import styles from './styles';
 
-export default withStyles(styles)(
+export default withStyles(styles, {injectTheme: true})(
   withSounds()(Footer)
 );

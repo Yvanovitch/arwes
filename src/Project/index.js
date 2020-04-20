@@ -3,6 +3,6 @@ import withSounds from '../tools/withSounds';
 import Project from './Project';
 import styles from './styles';
 
-export default withStyles(styles)(
+export default withStyles(styles, {injectTheme: true})(
   withSounds()(Project)
 );

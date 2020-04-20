@@ -23,7 +23,7 @@
   },
   "author": "Romel Pérez (romelperez.com)",
   "license": "MIT",
-  "homepage": "https://github.com/romelperez/arwes",
+  "homepage": "https://github.com/yvanovitch/arwes",
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run test-lint && TRAVIS=true npm run test-dev",
@@ -31,9 +31,9 @@
     "test-dev": "karma start",
     "compile": "npm run compile-clean && npm run compile-run",
     "compile-clean": "rimraf ./lib/*",
-    "compile-run": "babel --ignore '*.test.js' src --out-dir lib",
-    "watch": "webpack",
-    "play": "webpack-dev-server",
+    "compile-run": "webpack --config webpack/lib.config.js",
+    "watch": "webpack --config webpack/play.config.js",
+    "play": "webpack-dev-server  --config webpack/play.config.js",
     "script-api": "node ./scripts/api",
     "site-dev": "npm run script-api && next -p 7000",
     "site-build": "npm run script-api && next build",
@@ -55,9 +55,9 @@
     "polished": "^3.5.2",
     "prismjs": "^1.20.0",
     "prop-types": "*",
+    "react": "^16.13.1",
     "react-jss": "^10.1.1",
-    "react-transition-group": "^4.3.0",
-    "theming": "^3.2.0"
+    "react-transition-group": "^4.3.0"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
@@ -86,7 +86,6 @@
     "navigo": "^7.1.2",
     "next": "^9.3.5",
     "raw-loader": "^4.0.1",
-    "react": "^16.13.1",
     "react-addons-test-utils": "^15.6.2",
     "react-docgen": "^5.3.0",
     "react-dom": "^16.13.1",
@@ -99,6 +98,7 @@
     "sinon-chai": "^3.5.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "webpack-node-externals": "^1.7.2"
   }
 }

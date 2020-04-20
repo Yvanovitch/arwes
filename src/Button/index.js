@@ -3,6 +3,6 @@ import withSounds from '../tools/withSounds';
 import Button from './Button';
 import styles from './styles';
 
-export default withStyles(styles)(
+export default withStyles(styles, {injectTheme: true})(
   withSounds()(Button)
 );

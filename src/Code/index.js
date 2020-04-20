@@ -2,4 +2,4 @@ import withStyles from '../tools/withStyles';
 import Code from './Code';
 import styles from './styles';
 
-export default withStyles(styles)(Code);
+export default withStyles(styles, {injectTheme: true})(Code);

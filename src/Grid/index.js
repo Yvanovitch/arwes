@@ -3,7 +3,7 @@ import withStyles from '../tools/withStyles';
 import Grid from './Grid';
 import styles from './styles';
 
-const GridWithStyles = withStyles(styles)(Grid);
+const GridWithStyles = withStyles(styles, {injectTheme: true})(Grid);
 
 export const Row = props => <GridWithStyles row {...props} />;
 export const Col = props => <GridWithStyles col {...props} />;
