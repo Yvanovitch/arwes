@@ -11,7 +11,7 @@ export default () => {
     delete defaultProps.sounds;
 
     class Sounds extends Component {
-      static displayName = `ArwesSounds(${displayName})`;
+      static displayName = `AS(${displayName})`;
       static defaultProps = defaultProps;
       static contextTypes = {
         sounds: PropTypes.object
