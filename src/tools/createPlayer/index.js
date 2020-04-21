@@ -16,7 +16,7 @@ export default (depencencies, conf) => {
     ...depencencies,
   };
 
-  const { sound = {}, settings = {} } = conf || {};
+  const { sound = {}, settings = {oneAtATime: true} } = conf || {};
   const player = new deps.Howl(sound);
 
   if (settings.oneAtATime) {
