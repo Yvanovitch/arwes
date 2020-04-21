@@ -133,7 +133,7 @@ export default class Button extends Component {
       onClick && onClick(ev);
 
       if (animate) {
-        sounds.click && sounds.click.play();
+        sounds.click?.play();
       }
     }
   }

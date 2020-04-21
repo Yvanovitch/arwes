@@ -37,21 +37,21 @@ export default class Header extends Component {
   componentDidMount () {
     const { animate, show, sounds } = this.props;
     if (animate && show) {
-      sounds.deploy && sounds.deploy.play();
+      sounds.deploy?.play();
     }
   }
 
   componentDidUpdate (prevProps) {
     const { animate, show, sounds } = this.props;
     if (animate && prevProps.show !== show) {
-      sounds.deploy && sounds.deploy.play();
+      sounds.deploy?.play();
     }
   }
 
   componentWillUnmount () {
     const { animate, sounds } = this.props;
     if (animate) {
-      sounds.deploy && sounds.deploy.stop();
+      sounds.deploy?.stop();
     }
   }
 

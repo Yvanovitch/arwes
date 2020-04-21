@@ -53,7 +53,7 @@ export default function Project (props) {
             corners={4}
             hover
             noBackground
-            onClick={() => sounds.click && sounds.click.play()}
+            onClick={() => sounds.click?.play()}
           >
             {frameAnim => (
               <div>

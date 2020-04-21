@@ -159,7 +159,7 @@ export default class Words extends Component {
 
     const { animate, sounds } = this.props;
     if (animate) {
-      sounds.typing && sounds.typing.stop();
+      sounds.typing?.stop();
     }
   }
 
@@ -179,7 +179,7 @@ export default class Words extends Component {
     }
 
     if (animate) {
-      sounds.typing && sounds.typing.play();
+      sounds.typing?.play();
     }
 
     // 1s / frames per second (FPS)
