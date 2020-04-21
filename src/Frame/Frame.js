@@ -77,7 +77,7 @@ export default class Frame extends Component {
 
   componentDidUpdate (prevProps) {
     const { animate, show, sounds } = this.props;
-    if (animate && prevProps.show !== show) {
+    if (animate && show) {
       sounds.deploy?.play();
     }
   }

@@ -56,10 +56,6 @@ export default class Button extends Component {
     level: 2,
   }
 
-  test(value) {
-    console.log('value ',value)
-  }
-
   render () {
     const {
       Animation,
@@ -95,7 +91,6 @@ export default class Button extends Component {
           {...etc}
           onClick={this.onClick}
         >
-          {this.test(anim)}
           <Frame
             hover
             animate={animate}
