@@ -71,7 +71,7 @@ Animation.propTypes = {
 
 Animation.defaultProps = {
   show: true,
-  animate: false,
+  animate: true,
   appear: true,
   timeout: 0,
 };

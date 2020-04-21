@@ -59,6 +59,7 @@ export default class Frame extends Component {
 
   static defaultProps = {
     Animation: AnimationComponent,
+    animate: true,
     sounds: {},
     show: true,
     layer: 'primary',

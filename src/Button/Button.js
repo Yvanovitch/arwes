@@ -47,6 +47,7 @@ export default class Button extends Component {
 
   static defaultProps = {
     Animation: AnimationComponent,
+    animate: true,
     Highlight: HighlightComponent,
     Frame: FrameComponent,
     sounds: {},

@@ -124,6 +124,7 @@ Project.propTypes = {
 
 Project.defaultProps = {
   Animation: AnimationComponent,
+  animate: true,
   Frame: FrameComponent,
   Words: WordsComponent,
   Heading: HeadingComponent,

@@ -72,6 +72,7 @@ export default class Arwes extends Component {
 
   static defaultProps = {
     Animation: AnimationComponent,
+    animate: true,
     Puffs: PuffsComponent,
     createResponsive: createResponsiveModule,
     createLoader: createLoaderModule,

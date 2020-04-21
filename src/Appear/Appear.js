@@ -48,5 +48,6 @@ Appear.propTypes = {
 
 Appear.defaultProps = {
   Animation: AnimationComponent,
+  animate: true,
   show: true,
 };

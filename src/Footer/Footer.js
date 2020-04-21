@@ -29,6 +29,7 @@ export default class Footer extends Component {
 
   static defaultProps = {
     Animation: AnimationComponent,
+    animate: true,
     sounds: {},
     show: true,
   }

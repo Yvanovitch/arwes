@@ -68,6 +68,7 @@ Loading.propTypes = {
 
 Loading.defaultProps = {
   Animation: AnimationComponent,
+  animate: true,
   show: true,
   layer: 'primary',
 };

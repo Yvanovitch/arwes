@@ -145,6 +145,7 @@ Logo.propTypes = {
 
 Logo.defaultProps = {
   Animation: AnimationComponent,
+  animate: true,
   show: true,
   layer: 'primary',
   size: 100,

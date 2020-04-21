@@ -13,7 +13,8 @@ module.exports = [
   },
   devServer: {
     contentBase: [
-      path.resolve('play'),
+      path.resolve('play'), 
+      path.resolve(),
     ],
     port: 7100,
   },

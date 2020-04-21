@@ -106,6 +106,7 @@ Table.propTypes = {
 
 Table.defaultProps = {
   Animation: AnimationComponent,
+  animate: true,
   show: true,
   headers: [],
   dataset: [],

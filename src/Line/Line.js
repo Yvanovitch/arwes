@@ -52,6 +52,7 @@ Line.propTypes = {
 
 Line.defaultProps = {
   Animation: AnimationComponent,
+  animate: true,
   show: true,
   layer: 'primary',
 };

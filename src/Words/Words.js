@@ -46,6 +46,7 @@ export default class Words extends Component {
   };
 
   static defaultProps = {
+    animate: true,
     sounds: {},
     show: true,
     layer: '',

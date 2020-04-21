@@ -30,6 +30,7 @@ export default class Code extends Component {
 
   static defaultProps = {
     Animation: AnimationComponent,
+    animate: true,
     show: true,
     type: 'code',
     language: 'javascript',

@@ -65,6 +65,7 @@ export default class Image extends Component {
 
   static defaultProps = {
     Animation: AnimationComponent,
+    animate: true,
     Frame: FrameComponent,
     Loading: LoadingComponent,
     createLoader: createLoaderModule,
