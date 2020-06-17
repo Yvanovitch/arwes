@@ -33,6 +33,7 @@ export default class Button extends Component {
      * The inside `<Frame />` level.
      */
     level: PropTypes.number,
+    corners: PropTypes.number,
 
     /**
      * Props to pass down to the `<button />` element.
@@ -52,6 +53,7 @@ export default class Button extends Component {
     Frame: FrameComponent,
     sounds: {},
     show: true,
+    corners:1,
     layer: 'control',
     level: 2,
   }
@@ -69,6 +71,7 @@ export default class Button extends Component {
       show,
       layer,
       level,
+      corners,
       disabled,
       active,
       className,
@@ -95,7 +98,7 @@ export default class Button extends Component {
             hover
             animate={animate}
             show={show}
-            corners={1}
+            corners={corners}
             level={level}
             layer={disabled ? 'disabled' : layer}
             disabled={disabled}
