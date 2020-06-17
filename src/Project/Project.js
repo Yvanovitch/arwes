@@ -14,8 +14,8 @@ export default function Project (props) {
     classes,
     sounds,
     Animation,
+    className,
     Frame,
-    Words,
     Heading,
     animation,
     animate,
@@ -24,8 +24,8 @@ export default function Project (props) {
     header,
     headerSize,
     icon,
-    className,
     children,
+    Words,
     ...etc
   } = props;
   const cls = cx(classes.root, className);
@@ -53,7 +53,7 @@ export default function Project (props) {
             corners={4}
             hover
             noBackground
-            onClick={() => sounds.click?.play()}
+            // onClick={() => sounds.click?.play()}
           >
             {frameAnim => (
               <div>
