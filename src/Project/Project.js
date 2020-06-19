@@ -21,6 +21,7 @@ export default function Project (props) {
     animate,
     show,
     node,
+    corners,
     header,
     headerSize,
     icon,
@@ -50,7 +51,7 @@ export default function Project (props) {
             timeout={theme.animTime}
             layer='primary'
             level={0}
-            corners={4}
+            corners={corners}
             hover
             noBackground
             // onClick={() => sounds.click?.play()}
@@ -116,6 +117,8 @@ Project.propTypes = {
    */
   icon: PropTypes.any,
 
+  corners: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6]),
+
   /**
    * If function, receives the animation status object.
    */
@@ -128,6 +131,7 @@ Project.defaultProps = {
   Frame: FrameComponent,
   Words: WordsComponent,
   Heading: HeadingComponent,
+  corners: 4,
   show: true,
   sounds: {},
   node: 'article',
