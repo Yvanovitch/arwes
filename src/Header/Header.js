@@ -15,6 +15,7 @@ export default class Header extends Component {
     animate: PropTypes.bool,
     show: PropTypes.bool,
     animation: PropTypes.object,
+    inverseSeparator: PropTypes.bool,
 
     /**
      * It uses the `deploy` player.
@@ -32,6 +33,7 @@ export default class Header extends Component {
     animate: true,
     sounds: {},
     show: true,
+    inverseSeparator: false,
   }
 
   componentDidMount () {
@@ -61,6 +63,7 @@ export default class Header extends Component {
       classes,
       Animation,
       animation,
+      inverseSeparator,
       sounds,
       animate,
       show,
@@ -79,10 +82,11 @@ export default class Header extends Component {
       >
         {anim => (
           <header className={cx(cls, classes[anim.status])} {...etc}>
+            {inverseSeparator && <div className={classes.separator} />}
             <div className={classes.children}>
               {typeof children === 'function' ? children(anim) : children}
             </div>
-            <div className={classes.separator} />
+            {!inverseSeparator && <div className={classes.separator} />}
           </header>
         )}
       </Animation>
