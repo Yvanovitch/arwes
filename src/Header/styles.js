@@ -3,7 +3,7 @@ import { rgba } from 'polished';
 export default (theme) => {
   return {
     root: {
-      display: 'block',
+      display: 'flex',
       position: 'relative',
       backgroundColor: rgba(theme.background.primary.level0, theme.alpha),
       paddingBottom: 4,
@@ -29,7 +29,8 @@ export default (theme) => {
       transition: `all ${theme.animTime}ms ease-in`,
     },
     children: {
-      display: 'block',
+      display: 'inherit',
+      width: 'inherit',
     },
 
     entering: {},
