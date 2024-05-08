@@ -69,7 +69,7 @@ export default (theme) => {
     },
     box: {
       zIndex: 3,
-      height:'100%',
+      height:'fit-content',
       position: 'relative',
       overflow: 'hidden',
       display: 'block',

@@ -47,6 +47,13 @@ for code highlighting.
 $ npm install --save arwes
 ```
 
+## Compile
+For Nodejs >= 18
+
+set NODE_OPTIONS=--openssl-legacy-provider
+
+https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+
 ## Documentation
 
 See [arwes.romelperez.com](https://arwes.romelperez.com).
