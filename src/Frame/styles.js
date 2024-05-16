@@ -81,8 +81,7 @@ export default (theme) => {
           : rgba(getBg(theme, props), theme.alpha),
     },
     children: {
-      display: 'block',
-      height: '100%'
+      display: 'block'
     },
 
     // Borders
