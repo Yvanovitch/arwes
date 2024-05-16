@@ -31,7 +31,7 @@
     "test-dev": "karma start",
     "compile": "npm run compile-clean && npm run compile-run",
     "compile-clean": "rimraf ./lib/*",
-    "compile-run": "webpack --config webpack/lib.config.js",
+    "compile-run": "webpack --config webpack/lib.config.js", 
     "watch": "webpack --config webpack/play.config.js",
     "play": "webpack-dev-server  --config webpack/play.config.js",
     "script-api": "node ./scripts/api",

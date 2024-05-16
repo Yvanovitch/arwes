@@ -82,6 +82,7 @@ export default (theme) => {
     },
     children: {
       display: 'block',
+      height: '100%'
     },
 
     // Borders
