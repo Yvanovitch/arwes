@@ -135,7 +135,7 @@ export default class Frame extends Component {
           { !!corners && <div className={cx(classes.corner, classes.cornerRT)} />}
           { !!corners && <div className={cx(classes.corner, classes.cornerRB)} />}
 
-          <div className={classes.box}>
+          <div className={'cover-container ' + classes.box}>
             <div className={'children-container ' + classes.children}>
               {typeof children === 'function' ? children(anim) : children}
             </div>

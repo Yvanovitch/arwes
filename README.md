@@ -28,6 +28,10 @@
 
 _______________
 
+For node > 18
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
+
+
 Arwes is a web framework to build user interfaces for
 web applications based on science fiction and cyberpunk styles guidelines, animations
 and sounds effects. The idea is to **provide an user experience as if you were using
