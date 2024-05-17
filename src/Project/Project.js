@@ -7,7 +7,7 @@ import FrameComponent from '../Frame';
 import WordsComponent from '../Words';
 import HeadingComponent from '../Heading';
 
-export default function Project (props) {
+export default function Project(props) {
 
   const {
     theme,
@@ -54,7 +54,7 @@ export default function Project (props) {
             corners={corners}
             hover
             noBackground
-            // onClick={() => sounds.click?.play()}
+          // onClick={() => sounds.click?.play()}
           >
             {frameAnim => (
               <div>
@@ -67,7 +67,7 @@ export default function Project (props) {
                   <div className={classes.icon}>{icon}</div>
                 </header>
                 <div className={classes.separator} />
-                <div className={classes.children}>
+                <div className={'children-container ' + classes.children}>
                   {typeof children === 'function' ? children(frameAnim) : children}
                 </div>
               </div>
