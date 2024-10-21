@@ -81,7 +81,7 @@ export default class Arwes extends Component {
     showResources: true,
   }
 
-  constructor () {
+  constructor() {
     super(...arguments);
 
     this.state = {
@@ -94,18 +94,18 @@ export default class Arwes extends Component {
     });
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.loadResources();
   }
 
-  componentDidUpdate (prevProps) {
+  componentDidUpdate(prevProps) {
     if (prevProps.background !== this.props.background
-    || prevProps.pattern !== this.props.pattern) {
+      || prevProps.pattern !== this.props.pattern) {
       this.loadResources();
     }
   }
 
-  render () {
+  render() {
 
     const {
       Animation,
@@ -155,18 +155,18 @@ export default class Arwes extends Component {
         {...animation}
       >
         {anim => (
-        <div className={cx(cls, classes[anim.status])} {...rest}>
-          <div className={classes.background} style={backgroundStyle} />
-          <div className={classes.pattern} style={patternStyle} />
-          <Puffs
-            className={cx(classes.puffs, puffsProps && puffsProps.className)}
-            animate={!!(show && animate)}
-            {...puffsProps}
-          />
-          <div className={classes.main}>
-            {typeof children === 'function' ? children(anim) : children}
+          <div className={cx(cls, classes[anim.status])} {...rest}>
+            <div className={classes.background} style={backgroundStyle} />
+            <div className={classes.pattern} style={patternStyle} />
+            <Puffs
+              className={cx(classes.puffs, puffsProps && puffsProps.className)}
+              animate={!!(show && animate)}
+              {...puffsProps}
+            />
+            <div className={classes.main + ' arwes-main-root'}>
+              {typeof children === 'function' ? children(anim) : children}
+            </div>
           </div>
-        </div>
         )}
       </Animation>
     );
@@ -176,7 +176,7 @@ export default class Arwes extends Component {
    * Get active resources from resources props.
    * @return {Object}
    */
-  getActiveResources () {
+  getActiveResources() {
     const { background, pattern } = this.props;
     const responsive = this.responsive.get();
 
@@ -190,7 +190,7 @@ export default class Arwes extends Component {
    * Load active resources if they can be loaded.
    * Doesn't return the state, it only loads the data.
    */
-  loadResources () {
+  loadResources() {
     if (!this.props.loadResources) {
       return;
     }
